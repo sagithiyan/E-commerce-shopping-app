@@ -68,7 +68,7 @@ class Products with ChangeNotifier {
   // }
 
   Future<void> fetchAndSetProducts() async {
-    const url = 'https://flutter-update.firebaseio.com/products.json';
+    const url = 'https://shopapp-74e47.firebaseio.com/products.json';
     try {
       final response = await http.get(url);
       final extractedData = json.decode(response.body) as Map<String, dynamic>;
